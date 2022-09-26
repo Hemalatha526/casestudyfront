@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'tweetfront'`, () => {
+  it(`should have as title 'TweetApp-Client'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('tweetfront');
+    expect(app.title).toEqual('TweetApp-Client');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('tweetfront app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('TweetApp-Client app is running!');
   });
 });
